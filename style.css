@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body{
-  background-color: black;
+body {
+  background-image: url(./Images/5119498.jpg);
+  background-size: cover;
   color: white;
 }
-.container{
-  /* border: 2px solid red; */
-  width: 450px;
-  height: 710px;
+/* Main Container */
+.container {
+  width: 500px;
   background: linear-gradient(
     to bottom,
-    rgb(57, 0, 90),
-    rgb(72, 0, 111),
-    rgb(126, 0, 194)
+    rgb(69, 0, 109, 0.603),
+    rgb(110, 0, 169, 0.718),
+    rgb(154, 1, 236, 0.819)
   );
   display: flex;
   align-items: center;
@@ -24,60 +24,79 @@ body{
   flex-direction: column;
   border-radius: 1rem;
   margin: 1rem auto;
+  border: 1.5px solid rgb(255, 255, 255, 0.401);
 }
-.navbar{
-  background-color: rgb(183, 183, 183, 0.694);
+::-webkit-scrollbar {
+  display: none;
+}
+/* Navber Section */
+.navbar {
+  background-color: rgb(210, 114, 255, 0.694);
   backdrop-filter: blur(20px);
-  width: 330px;
-  padding: .4rem .4rem;
+  width: 440px;
+  padding: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 40px;
-  margin-top: -2rem;
-  margin-bottom: 2rem;
+  transition-duration: 0.2s;
+  margin: 2rem;
 }
-.profile{
-  width: 2.6rem;
+.navbar :hover {
+  transform: scale(0.97);
+}
+.profile {
+  width: 4rem;
   background: white;
   border-radius: 50%;
 }
-.menu{
+.menu {
   filter: invert(1);
-  width: 2rem;
-  margin-right: 1rem;
+  width: 2.5rem;
 }
-.main{
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  width: 25rem;
 }
-.items{
+.hero > span {
+  font-family: monospace;
+  color: rgb(186, 186, 186);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+/* Links List Section */
+.items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 9rem 2rem;
-  width: 320px;
+  width: 360px;
   border-radius: 9px;
   background-color: rgb(255, 255, 255, 0.795);
   margin: 1rem;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   cursor: pointer;
   box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.319);
+  padding: 0.85rem;
 }
-.items:hover{
+.items:hover {
   transform: scale(0.96);
   background-color: rgb(255, 255, 255);
 }
-.icon{
-  width: 2rem;
+.icon {
+  width: 2.5rem;
 }
-.user{
+.user {
   color: rgb(61, 61, 61);
-}
-.name{
-margin-bottom: .5rem;
-}
-.sub{
-font-family: monospace;
-color: rgb(186, 186, 186);
-margin-bottom: 2rem;
+  font-family: cursive;
 }
