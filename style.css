@@ -70,12 +70,15 @@ body {
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
+/* Links List Section */
 .main {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-/* Links List Section */
+.main > a {
+  text-decoration: none;
+}
 .items {
   display: flex;
   align-items: center;
@@ -85,7 +88,6 @@ body {
   background-color: rgb(255, 255, 255, 0.795);
   margin: 1rem;
   transition-duration: 0.2s;
-  cursor: pointer;
   box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.319);
   padding: 0.85rem;
 }

@@ -1,0 +1,51 @@
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 20rem;
+    margin: 1.5rem auto;
+    align-items: center;
+  }
+
+  .navbar { 
+    width: 290px;
+    padding: 0.85rem;
+  }
+
+  .profile {
+    width: 2.5rem;
+  }
+
+  .menu {
+    width: 1rem;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero > span {
+    font-size: 0.75rem;
+    margin-bottom: 0rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .items { 
+    width: 270px; 
+    margin: 0.50rem;
+    padding: 0.50rem;
+  }
+
+  .icon {
+    width: 2rem;
+  }
+
+  .user {
+    font-size: 0.85;
+  }
+}
